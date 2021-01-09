@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Fylo data storage component</title>
+
+</head>
+
+<body>
+  <!--fylo Logo SEction -->
+
+  <div class="container">
+    <div class="fylo-container">
+      <img src="/images/logo.svg" alt="logo" alt="fylo-logo" class="fylo-logo">
+      <div class="icons">
+        <img src="/images/icon-document.svg" alt="document icon" class="icon-logo">
+        <img src="/images/icon-folder.svg" alt="folder icon" class="icon-logo">
+        <img src="/images/icon-upload.svg" alt="upload icon" class="icon-logo">
+      </div>
+    </div>
+
+
+    <!--Progrss BAr Section -->
+
+
+    <div class="progress">
+      <p><label for="progress-bar">You’ve used <strong class="white"> 815 GB</strong> of your storage</p></label>
+      <span class="gbleft"> <span class="data"> <strong>185</strong></span> GB Left</span>
+
+      <progress id="progress-bar" value="70" max="100" class="p-bar"></progress>
+      <div class="ball"></div>
+      <div class="p-tag">
+        <p>0GB</p>
+        <p>1000 GB</p>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Doyin Gold</a>.
+  </footer>
+</body>
+
+</html>

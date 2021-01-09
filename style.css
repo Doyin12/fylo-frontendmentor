@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+/* main content */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: hsl(229, 57%, 11%);
+}
+
+p {
+    font-size: 0.75rem;
+}
+
+.white {
+    color: #fff;
+}
+
+.container {
+    max-width: 75rem;
+    margin: auto;
+    position: relative;
+    top: 40vh;
+    display: flex;
+    justify-content: center;
+}
+
+.fylo-container {
+    background-color: hsl(228, 56%, 26%);
+    width: auto;
+    border-top-left-radius: 0.313rem;
+    border-top-right-radius: 3.125rem;
+    border-bottom-left-radius: 0.313rem;
+    border-bottom-right-radius: 0.313rem;
+    padding: 20px;
+}
+
+.fylo-logo {
+    width: 5.313rem;
+    margin: 0.313rem 0.625rem 0.813rem 0.313rem;
+}
+
+.icons .icon-logo {
+    background: hsl(229, 57%, 11%);
+    padding: 0.625rem;
+    width: 0.875rem;
+    margin: 0.313rem;
+    height: 0.75rem;
+    border-radius: 0.313rem;
+}
+
+.icons {
+    display: flex;
+    width: 33.3%;
+    box-sizing: border-box;
+}
+
+.progress {
+    display: flex;
+    flex-direction: column;
+    background: hsl(228, 56%, 26%);
+    margin-left: 1.875rem;
+    border-radius: 0.625rem;
+    padding: 1.25rem;
+    width: 18.75rem;
+    height: 2.813rem;
+    position: relative;
+    top: 2.7rem;
+}
+
+progress[value] {
+    appearance: none;
+    width: 100%;
+    height: 0.563rem;
+    margin-top: 0.625rem;
+    margin-bottom: 0.313rem;
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color:hsl(229, 57%, 11%);
+    border-radius: 0.938rem;
+}
+
+progress[value]::-webkit-progress-value {
+    background-image: linear-gradient(to right, #FFA399, #FF4D97);
+    border-radius: 0.938rem;
+}
+
+.ball {
+    width: 0.625rem;
+    height: 0.625rem;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    right: 6.8rem;
+    bottom: 2rem;
+}
+.p-tag {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.gbleft {
+    background: #fff;
+    width: 6.875;
+    position: absolute;
+    height: auto;
+    text-align: center;
+    right: 1.563rem;
+    top: -1.563rem;
+    font-size: 0.688rem;
+    text-align: top;
+    border-radius: 0.313rem;
+}
+
+.data {
+    font-size: 1.875rem;
+}
+
+
+.attribution {
+    position: relative;
+    top: 35rem;
+    font-size: 0.688rem;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+
+@media (max-width: 600px) {
+    body {
+        background-image: url(/images/bg-mobile.png);
+    }
+}
+@media (min-width: 600px) and ( max-width: 1440px) {
+    body {
+        background-image: url(/images/bg-desktop.png);
+    background-size: auto;
+    background-position: bottom;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        max-width: 100%;
+        margin: auto;  
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 5rem 0 0;
+    }
+
+    p {
+        font-size: 1.25rem;
+    }
+
+    .fylo-container {
+        background-color: hsl(228, 56%, 26%);
+        width: auto;
+        height: auto;
+        margin: 1.25rem;
+        padding: 1.25rem 3.125rem 1.25rem 1.25rem;
+        position: relative;
+    }
+
+    .fylo-logo {
+        width: 70%;
+        margin: 0.313rem 0.625rem 1.875rem 0.313rem;
+    }
+
+    .icons .icon-logo {
+        background: hsl(229, 57%, 11%);
+        padding: 0.938rem;
+        width: 3.125rem;
+        margin: 0.313rem;
+        height: 3.125rem;
+        border-radius: 0.313rem;
+    }
+
+    .icons {
+        display: flex;
+        width: 100%;
+        box-sizing: border-box;
+        justify-content: center;
+    }
+
+    .progress {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: 6.875rem;
+        margin: 0 1.25rem 1.25rem 1.25rem;
+    }
+
+    progress[value] {
+        appearance: none;
+        width: auto;
+        height: 1.25rem;
+        margin-top: 1.25rem;
+        margin-bottom: 0.938rem;
+        padding-right: 3.125rem;
+        top: 4.375rem;
+    }
+
+    .ball {
+        display: none;
+    }
+
+    .gbleft {
+        display: flex;
+        
+    }
+
+    .data {
+        font-size: 3.125rem;
+    }
+}
